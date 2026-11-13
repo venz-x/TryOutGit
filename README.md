@@ -6,7 +6,7 @@ A step-by-step record of how I practiced branching, branch protection rules, Pul
 ---
 
 ## 1. Initial Project Setup & Pushing to GitHub
-**Screenshots:** ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/01.png) (VS Code setup) & ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/02.png) (GitHub repo)
+**Screenshots:** ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/01.png) (VS Code setup) & ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/02.png) (GitHub repo)
 
 **What I did:**
 I created a project folder (`TestGithub`) with three subdirectories (`backend/yo`, `frontend/ko`, and `ML/ml` containing `llm`) and pushed the files to my `TryOutGit` repository on the `main` branch.
@@ -22,7 +22,7 @@ git push -u origin main
 ```
 
 ## 2. Locking (Protecting) the main Branch
-Screenshots: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/03.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/04.png)
+Screenshots: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/03.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/04.png)
 
 What I did:
 To prevent anyone (including myself) from pushing code directly to main without a Pull Request, I configured a Branch Ruleset on GitHub:
@@ -39,7 +39,7 @@ Checked Restrict deletions and Require a pull request before merging (with Requi
 
 
 ## 3. Creating a Feature Branch & Pushing Changes
-Screenshots: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/05.png)
+Screenshots: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/05.png)
 
 What I did:
 Instead of working on main, I created a separate feature branch called feat/ml-update.
@@ -57,7 +57,7 @@ git push
 ```
 
 ## 4. Testing the main Branch Lock & Resetting HEAD
-Screenshot: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/06.png) | ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/12.png)
+Screenshot: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/06.png) | ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/12.png)
 
 What I did:
 I wanted to see what happens if I try to merge locally and push directly to main without a Pull Request.
@@ -102,7 +102,7 @@ git branch -d feat/ml-update
 
 
 ## 6. Simulating & Resolving a Merge Conflict
-Screenshots: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/07.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/08.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/09.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/10.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/11.png),
+Screenshots: ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/07.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/08.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/09.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/10.png), ![](https://raw.githubusercontent.com/venz-x/TryOutGit/refs/heads/main/img/11.png),
 
 What I did:
 I simulated two branches editing the exact same line (Line 1 of ML/ml) from the same starting point (llm v2):
